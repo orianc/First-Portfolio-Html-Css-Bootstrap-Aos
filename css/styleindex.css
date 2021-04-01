@@ -16,20 +16,6 @@ p {
     right: -300px;
 }
 
-a {
-    color: #1d3557 !important;
-    text-transform: uppercase;
-}
-
-.fas {
-    opacity: 50%;
-}
-
-.fas:hover {
-    opacity: 90%;
-
-}
-
 .bg-primary {
     background-color: #fcfcfc !important;
 }
@@ -116,6 +102,34 @@ h3 {
     font-size: 2.3rem;
 }
 
+.navbar-collapse {
+    flex-grow: 0.1!important;
+    align-items: center;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: 0 0 0 0rem!important;
+}
+#navPart a {
+    color: #6d7e97 !important;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+#navPart a:hover {
+    color: #a8dadc !important;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+
+.active span {
+    color: #1d3557;
+    font-weight: 500;
+
+}
 
 .resumebtn {
     background-color: #a8dadc18;
@@ -124,20 +138,11 @@ h3 {
 }
 
 
-/* Section aboutMe */
+/* Section a propos */
 
-#aboutme {
-    box-shadow: inset 0px 0px 15px 0.5px rgba(0, 0, 0, 0.171);
-    /* background-image: radial-gradient(rgba(255, 255, 255, 0.267), rgba(75, 0, 0, 0.137)), linear-gradient(#fffeee5b, #1d3557c9), url(../img/photo-tete.jpg);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed; */
-
-    height: auto;
-}
 #presentationcarousel {
-    height: auto;
-
+    height: 100vh;
+    padding-top: 5%;
 }
 
 .carousel-indicators li {
@@ -150,6 +155,16 @@ h3 {
 }
 .carousel-control-next-icon, .carousel-control-prev-icon {
     color: #1d3557!important;
+}
+.carousel-control-next {
+    
+    justify-content: flex-end;
+   
+} 
+.carousel-control-prev {
+    
+    justify-content: flex-start;
+   
 }
 .carousel-indicators [data-bs-target] {
     background-color: #1d3557!important;
@@ -214,10 +229,14 @@ h3 {
 
 #skills {
     height: 80vh;
+    margin-top: 3rem;
+
 }
 
-.fondSkills {
-    background: #457b9d;
+.imgskills {
+    height: 100%;
+    background-image: url(../img/pexels-photo-4073705.jpeg);
+
 }
 
 .fondSkillsDetail {
