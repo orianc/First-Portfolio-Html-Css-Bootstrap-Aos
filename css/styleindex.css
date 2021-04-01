@@ -1,0 +1,241 @@
+/* Harmonisation des règles générales. */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+}
+
+p {
+    font-size: 11px;
+}
+
+.scrollup {
+    right: -300px;
+}
+
+a {
+    color: #1d3557 !important;
+    text-transform: uppercase;
+}
+
+.fas {
+    opacity: 50%;
+}
+
+.fas:hover {
+    opacity: 90%;
+
+}
+
+.bg-primary {
+    background-color: #fcfcfc !important;
+}
+
+
+.bg-secondary {
+    background-color: #a8dadc !important;
+}
+
+.bg-three {
+    background-color: #f0f0f0 !important;
+
+}
+
+.text-primary {
+    color: #1d3557 !important;
+}
+
+.text-white {
+    color: #1d3557 !important;
+}
+
+.btn {
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #1d3557 !important;
+}
+
+
+.titre-section {
+    margin-bottom: 20px;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+    font-size: 14px;
+    background: #1d3557;
+    display: inline-block;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: center;
+    vertical-align: middle;
+    padding: .375rem .75rem;
+    border-radius: 0px 0px 5px 5px;
+
+}
+
+/* Enter / Header */
+header {
+    min-height: 100vh;
+    padding-top: 20vh;
+    box-shadow: inset 0px 0px 15px 0.5px rgba(0, 0, 0, 0.171);
+    background-image: radial-gradient(rgba(255, 255, 255, 0.267), rgba(75, 0, 0, 0.137)), linear-gradient(#fffeee5b, #1d3557c9), url(../img/photo-tete.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(245, 245, 245);
+    font-size: 10vw;
+}
+
+
+h2 {
+    color: #1d3557;
+    font-weight: lighter;
+    font-size: 2vw;
+}
+
+h3 {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding: 0.4rem;
+    font-size: 14px;
+    background: #e63946 !important;
+}
+
+
+/* Nav  */
+
+.brand {
+    color: #1d3557;
+    font-size: 2.3rem;
+}
+
+
+.resumebtn {
+    background-color: #a8dadc18;
+    border-radius: 5px;
+    padding: 2rem;
+}
+
+
+/* Section aboutMe */
+
+#aboutme {
+    box-shadow: inset 0px 0px 15px 0.5px rgba(0, 0, 0, 0.171);
+    /* background-image: radial-gradient(rgba(255, 255, 255, 0.267), rgba(75, 0, 0, 0.137)), linear-gradient(#fffeee5b, #1d3557c9), url(../img/photo-tete.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; */
+
+    height: auto;
+}
+#presentationcarousel {
+    height: auto;
+
+}
+
+.carousel-indicators li {
+    border: none;
+    background: #ccc;
+}
+
+.carousel-indicators li.active {
+    background: #28a745;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    color: #1d3557!important;
+}
+.carousel-indicators [data-bs-target] {
+    background-color: #1d3557!important;
+}
+
+
+.pQuote {
+    font-size: 13px!important;
+    font-weight: 200;
+    text-align: justify;
+}
+
+.text-success {
+    color: #1d3557!important;
+}
+
+.boxImgCv {
+    height: 150px;
+    width: 100%;
+    border-radius: 10px;
+    background-image: url(../img/cv-miniature.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: .5s ease;
+
+}
+
+.blockquote-footer {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: .6em;
+    color: #6c757d;
+}
+
+.cvPart:hover .boxImgCv {
+    opacity: 0.2;
+  }
+  
+.cvPart:hover .middle {
+    opacity: 1;
+  }
+
+  .textcv {
+    background-color: #a8dadc;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+/* Skills */
+
+
+#skills {
+    height: 80vh;
+}
+
+.fondSkills {
+    background: #457b9d;
+}
+
+.fondSkillsDetail {
+    background-color: #a8dadc18;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+/* Réalisation */
+
+#realisation {
+    height: 50vh;
+    background: #e63946;
+}
+
+/* Contact */
+
+#contact {
+    height: 100vh;
+    background: #1d3557;
+}
