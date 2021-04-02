@@ -1,4 +1,4 @@
-/* Harmonisation des règles générales. */
+/* -----------------------------GENERAL RULES---------------------------- */
 html {
     scroll-behavior: smooth;
 }
@@ -16,31 +16,22 @@ p {
     right: -300px;
 }
 
+/* BG COLOR */
 .bg-primary {
     background-color: #fcfcfc !important;
 }
 
 
 .bg-secondary {
-    background-color: #a8dadc !important;
+    background-color: #1d3557 !important;
 }
 
-.bg-three {
-    background-color: #f0f0f0 !important;
-
-}
-
+/* TEXT COLOR */
 .text-primary {
-    color: #1d3557 !important;
+    color: #fcfcfc !important;
 }
 
-.text-white {
-    color: #1d3557 !important;
-}
-
-.btn {
-    font-weight: 100;
-    text-transform: uppercase;
+.text-secondary {
     color: #1d3557 !important;
 }
 
@@ -61,18 +52,13 @@ p {
 
 }
 
-/* Enter / Header */
-header {
-    min-height: 100vh;
-    padding-top: 20vh;
-    box-shadow: inset 0px 0px 15px 0.5px rgba(0, 0, 0, 0.171);
-    background-image: radial-gradient(rgba(255, 255, 255, 0.267), rgba(75, 0, 0, 0.137)), linear-gradient(#fffeee5b, #1d3557c9), url(../img/photo-tete.jpg);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-
+/* ---- BUTTON --- */
+.btn {
+    font-size: 1rem;
 }
 
+
+/*-- LES TITRES -- */
 h1 {
     font-family: 'Bebas Neue', cursive;
     color: rgb(245, 245, 245);
@@ -87,15 +73,29 @@ h2 {
 }
 
 h3 {
-    padding-left: 60px;
-    padding-right: 60px;
-    padding: 0.4rem;
-    font-size: 14px;
-    background: #e63946 !important;
+    font-family: 'Bebas Neue', cursive;
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 3rem;
+}
+h4 {
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 13px;
+} 
+
+/* ----------------------------------- HEADER ----------------------------------- */
+header {
+    min-height: 100vh;
+    padding-top: 20vh;
+    box-shadow: inset 0px 0px 15px 0.5px rgba(0, 0, 0, 0.171);
+    background-image: radial-gradient(rgba(255, 255, 255, 0.267), rgba(75, 0, 0, 0.137)), linear-gradient(#fffeee5b, #1d3557c9), url(../img/photo-tete.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-
-/* Nav  */
+/* -------------------------------- NAVBAR  -----------------------------------*/
 
 .brand {
     color: #1d3557;
@@ -138,7 +138,7 @@ h3 {
 }
 
 
-/* Section a propos */
+/* ---------------------------- PRESENTATION---------------------------- */
 
 #presentationcarousel {
     height: 100vh;
@@ -224,28 +224,19 @@ h3 {
     -ms-transform: translate(-50%, -50%);
     text-align: center;
   }
-/* Skills */
-
-
+/* --------------------------------- SKILLS---------------------------- */
 #skills {
     height: 80vh;
     margin-top: 3rem;
 
 }
-
 .imgskills {
     height: 100%;
     background-image: url(../img/pexels-photo-4073705.jpeg);
 
 }
 
-.fondSkillsDetail {
-    background-color: #a8dadc18;
-    border-radius: 5px;
-    padding: 1rem;
-}
-
-/* Réalisation */
+/* ----------------------------REALISATIONS---------------------------- */
 
 #realisation {
     height: 50vh;
@@ -255,6 +246,34 @@ h3 {
 /* Contact */
 
 #contact {
-    height: 100vh;
-    background: #1d3557;
+    min-height: 100vh;
+}
+
+#contact h3 {
+    letter-spacing: 1rem ;
+
+}
+
+.form-control {
+    border-radius: 0.1rem!important;
+    font-size: 12px;
+}
+
+.form-control::placeholder {
+    color: #dbdbdb;
+    font-style: italic;
+}
+label {
+    font-size: 13px;
+}
+
+#contact .btn {
+    margin-left: 40%;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem ;
+}
+
+#contact .btn:hover {
+   opacity: 50%;
 }
