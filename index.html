@@ -8,24 +8,24 @@
     <title>Portfolio</title>
     <!---------------------------------------------------- CSS ---------------------------------------------------->
 
-        <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-        <!-- Font et iconeFontAwesome -->
+    <!-- Font et iconeFontAwesome -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/9cf48bf496.js" crossorigin="anonymous"></script>
-        
-    
-        <!-- AOS -->
+
+
+    <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
-        <!-- Animate -->
+
+    <!-- Animate -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    
-        <!-- CSS Locas -->
+
+    <!-- CSS Locas -->
     <link rel="stylesheet" href="./css/styleindex.css">
 </head>
 
@@ -44,7 +44,7 @@
 
     <!-- Le menu de navigation -->
     <nav id="navPart" class="navbar navbar-expand-lg bg-white sticky-top">
-        <div class="container-fluid" data-aos="fade-up" data-aos-duration="1000">
+        <div class="container-fluid" data-aos="fade-up" data-aos-duration="500">
             <!-- Logo à gauche -->
             <a class="navbar-brand" href="#headerpart">
                 <h1 class="brand animate__animated animate__fadeInUp mb-0">Orian CROS</h1>
@@ -89,7 +89,7 @@
     </span> -->
 
 
-    <!-- Section PRESENTATION  ----------------------------------------------------------------------------------------------->
+    <!----------------------------------------------- PRESENTATION  ------------------------------------------>
     <section id="presentationcarousel" class="pb-5" data-aos="zoom-in" data-aos-duration="1900">
         <div class="container">
             <div class="row">
@@ -245,21 +245,83 @@
         
     </section> -->
 
+
+
+
+
+
     <!--------------------------------------------------- Section Réalisations ---------------------------------------------------->
 
-    <section id="realisation">
-        <div class="container-fluid">
-            <div class="container justify-content-center d-flex">
-                <div class="row col-6">
-                    <span class="titre-section text-primary font-weight-bold justify-content-center">Réalisation</span>
-                </div>
-            </div>
+    <section id="realisation" class="d-flex align-items-center">
+
+        <div class="album py-5 bg-white w-100 ">
             <div class="container">
-                <div class="row">
+
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="./img/imgprojet-1-portfolio.jpg" class="card-img-top" alt="">
+                           
+
+                            <div class="card-body">
+                                <h4 class="card-title">Portfolio</h4>
+                                <p class="card-text">Vous y êtes ! Projet réalisé avec HTML5, CSS3, BootStrap, ainsi que des bibliothèques comme AOS ou Animate.</p>
+                                
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Voir</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">GIT</button>
+                                    </div>
+                                    <small class="text-muted">Avril 2021</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="./img/imgprojet-1-portfolio.jpg" class="card-img-top" alt="">
+                           
+
+                            <div class="card-body">
+                                <h4 class="card-title">Portfolio</h4>
+                                <p class="card-text">Vous y êtes ! Projet réalisé avec HTML5, CSS3, BootStrap, ainsi que des bibliothèques comme AOS ou Animate.</p>
+                                
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Voir</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">GIT</button>
+                                    </div>
+                                    <small class="text-muted">Avril 2021</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="./img/imgprojet-1-portfolio.jpg" class="card-img-top" alt="">
+                           
+
+                            <div class="card-body">
+                                <h4 class="card-title">Portfolio</h4>
+                                <p class="card-text">Vous y êtes ! Projet réalisé avec HTML5, CSS3, BootStrap, ainsi que des bibliothèques comme AOS ou Animate.</p>
+                                
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Voir</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">GIT</button>
+                                    </div>
+                                    <small class="text-muted">Avril 2021</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  
+                  
 
                 </div>
             </div>
         </div>
+
     </section>
 
 
@@ -269,37 +331,38 @@
         <div class="container d-flex pt-5 justify-content-center">
             <div class="row">
                 <!-- INTRO SECTION -->
-                <div>
-                    <h3 data-aos="fade-up" data-aos-duration="1000"  class="text-center text-primary py-2">Contact</h3>
-                    <div data-aos="flip-up" data-aos-duration="1000" data-aos-delay="800" class="mb-5 bg-three text-center">
+                <div data-aos="flip-up" data-aos-duration="1000" data-aos-delay="300">
+                    <h3 data-aos="fade-up" class="text-center text-primary py-2">Contact</h3>
+                    <div class="mb-5 bg-three text-center">
                         <h4 class="text-primary">
                             Une question, un besoin ou simplement envie d'échanger autour du web ? C'est ici !
 
                         </h4>
-                     </div>
+                    </div>
                 </div>
-                <div  class=" text-uppercase" id="FormContact">
+                <div data-aos="flip-up" data-aos-duration="1000" data-aos-delay="500" class=" text-uppercase"
+                    id="FormContact">
                     <!-- Form -->
                     <form>
-                        <div data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000" class="mb-3">
+                        <div  class="mb-3">
                             <label for="InputName" class="form-label text-primary">Votre nom</label>
-                            <input type="text" class="form-control" id="InputName" placeholder="Name"
-                                required>
+                            <input type="text" class="form-control" id="InputName" placeholder="Name" required>
                         </div>
-                        <div data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1200" class="">
+                        <div class="">
                             <label for="InputEmail" class="form-label text-primary">Votre mail</label>
                             <input type="email" class="form-control" id="InputEmail" placeholder="mail@mail.com"
                                 required>
                         </div>
-                        <div data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1400" class="mt-5">
+                        <div class="mt-5">
                             <label for="InputText" class="form-label text-primary">Votre message</label>
                             <textarea class="form-control" placeholder="Je trouve votre portoflio très sympa et..."
                                 id="InputText" style="height: 100px" required></textarea>
                         </div>
-                        <div >
-                            <button href="mailto:orian.ea15@gmail.com" type="submit" class="mt-2 btn flex-end text-primary">Envoyer</button>
 
-                        </div>
+                        <button href="mailto:orian.ea15@gmail.com" type="submit"
+                            class="mt-2 btn flex-end text-primary">Envoyer</button>
+
+
                     </form>
                 </div>
 

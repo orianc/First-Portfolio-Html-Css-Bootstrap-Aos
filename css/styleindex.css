@@ -1,4 +1,4 @@
-/* -----------------------------GENERAL RULES---------------------------- */
+/* ---------------------------------------------------------------- GENERAL RULES --------------------------------------------------------------- */
 html {
     scroll-behavior: smooth;
 }
@@ -16,7 +16,7 @@ p {
     right: -300px;
 }
 
-/* BG COLOR */
+/* ------- BG COLOR ------- */
 .bg-primary {
     background-color: #fcfcfc !important;
 }
@@ -26,7 +26,7 @@ p {
     background-color: #1d3557 !important;
 }
 
-/* TEXT COLOR */
+/* ------- TEXT COLOR ------- */
 .text-primary {
     color: #fcfcfc !important;
 }
@@ -36,21 +36,6 @@ p {
 }
 
 
-.titre-section {
-    margin-bottom: 20px;
-    padding-left: 2rem !important;
-    padding-right: 2rem !important;
-    font-size: 14px;
-    background: #1d3557;
-    display: inline-block;
-    font-weight: 600;
-    line-height: 1.5;
-    text-align: center;
-    vertical-align: middle;
-    padding: .375rem .75rem;
-    border-radius: 0px 0px 5px 5px;
-
-}
 
 /* ---- BUTTON --- */
 .btn {
@@ -58,7 +43,7 @@ p {
 }
 
 
-/*-- LES TITRES -- */
+/* ---- LES TITRES ---- */
 h1 {
     font-family: 'Bebas Neue', cursive;
     color: rgb(245, 245, 245);
@@ -83,6 +68,9 @@ h4 {
     font-weight: lighter;
     font-size: 13px;
 } 
+
+/* ---------------------------------------------------------------------- BY SECTION ---------------------------------------------------------------------- */
+
 
 /* ----------------------------------- HEADER ----------------------------------- */
 header {
@@ -236,14 +224,31 @@ header {
 
 }
 
-/* ----------------------------REALISATIONS---------------------------- */
+/* ---------------------------- REALISATIONS ---------------------------- */
 
 #realisation {
-    height: 50vh;
-    background: #e63946;
+    min-height: 100vh;
 }
 
-/* Contact */
+.album  {
+    box-shadow: inset 0px 0px 15px 0.5px rgba(0, 0, 0, 0.10);
+}
+.btn-outline-secondary:hover {
+    color: #fff;
+    background-color: #a8dadc;
+    border-color: #a8dadc;
+}
+
+.btn-outline-secondary:focus {
+
+    box-shadow: none;
+}
+.btn-outline-secondary:active {
+    color: #fff;
+    background-color: #a8dadc;
+    border-color: #a8dadc;
+}
+/* ---------------------------- CONTACT ---------------------------- */
 
 #contact {
     min-height: 100vh;
