@@ -69,6 +69,7 @@ h3 {
 }
 
 h4 {
+    font-family: 'Noto Sans JP', sans-serif;
     text-transform: uppercase;
     font-weight: lighter;
     font-size: 13px;
@@ -255,13 +256,37 @@ header {
 #realisation {
     min-height: auto;
 }
+#realisation .card-body {
+    position: absolute;
+    top: 2.5%; bottom: 0; right: 0; left: 2.5%;
+    height: 95%; width: 95%;
+    background-color: #1d3557;
+    color: #fcfcfc!important;
+    align-items: center;
+    display: grid;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+}
 
-.album {
-    /* box-shadow: inset 0px 0px 15px 0.5px rgba(0, 0, 0, 0.05); */
+#realisation .card-body:hover {
+    opacity: 1;
+}
+
+#realisation h4 {
+    font-weight: 900;
+    letter-spacing: 7px;
+}
+ 
+.text-muted {
+    color: #fcfcfc!important;
+
+}
+.btn-outline-secondary {
+    color: #fcfcfc!important;
 }
 
 .btn-outline-secondary:hover {
-    color: #fff;
+    color: #fff!important;
     background-color: #a8dadc;
     border-color: #a8dadc;
 }
