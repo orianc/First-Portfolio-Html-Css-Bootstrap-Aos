@@ -5,11 +5,17 @@ html {
 
 body {
     font-family: 'Noto Sans JP', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
+    color: #4c5858;
 }
 
 p {
-    font-size: 11px;
+    font-size: 14px;
+
+}
+
+a {
+    color: #a8dadc;
 }
 
 .scrollup {
@@ -54,17 +60,18 @@ h1 {
 h2 {
     color: #1d3557;
     font-weight: lighter;
-    font-size: 2vw;
+    font-size: 14px;
 }
 
 h3 {
     font-family: 'Noto Sans JP', sans-serif;
-    font-weight: 200;
-    font-size: 4vw;
-    letter-spacing: 1rem;
+    font-weight: 800;
+    font-size: 16px;
+    letter-spacing: 1px;
     text-transform: uppercase;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #a8dadc;
 
 }
 
@@ -73,6 +80,27 @@ h4 {
     text-transform: uppercase;
     font-weight: lighter;
     font-size: 13px;
+}
+
+h5 {
+    font-family: 'Noto Sans JP', sans-serif;
+    
+    text-transform: capitalize;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+h6 {
+    color: #87a7a8;
+    font-weight: 200;
+}
+
+.separateur {
+    width: 20%;
+    height: 5px;
+    background: #1d3557;
+    position: relative;
+
 }
 
 /* ---------------------------------------------------------------------- BY SECTION ---------------------------------------------------------------------- */
@@ -136,7 +164,7 @@ header {
 /* ---------------------------- PRESENTATION---------------------------- */
 
 #presentationcarousel {
-    height: 100vh;
+    min-height: auto;
     padding-top: 5%;
 }
 
@@ -229,12 +257,29 @@ header {
 /* --------------------------------- FORMATION ---------------------------- */
 
 #formation {
-    min-height: 100vh;
+    min-height: 33vh;
+    max-height: 90vh;
+    margin-top: 2rem;
 }
 
 #formation .row {
     min-height: auto;
 }
+#formation .separateur {
+    left: 80%;
+
+}
+
+.img-dc
+
+{
+    height: auto;
+    width: 100px;
+}
+.part-right-dc h5 {
+    font-size: 16px;
+}
+
 
 
 
