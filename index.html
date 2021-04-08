@@ -144,16 +144,13 @@
 
                                 <div class="carousel-item">
                                     <div class="media-body ml-3">
-                                        <blockquote class="blockquote border-0 p-0 text-center">
-                                            <div class="btn text-success fs-2 fw-bold mb-1 text-center">CV</div>
-                                            <p class="pQuote text-center"> Vous souhaitez jeter un oeil à mon cv et
-                                                aux différents emplois exercé avant ma reconversion ? C'est par ici
-                                                !</p>
-                                            <div class="cvPart text-center justify-content-center">
+                                        <blockquote class="blockquote border-0 p-0 text-center row">
+                                          
+                                            <div class="text-center justify-content-center">
+                                              
                                                 <a href="./dl/CV Formation digitale.pdf" download="cv">
-                                                    <div class="boxImgCv"></div>
                                                     <div class="middle">
-                                                        <div class="textcv">PDF</div>
+                                                        <div class="textcv">Télécharger le CV en PDF</div>
                                                     </div>
 
                                                 </a>
@@ -187,9 +184,12 @@
 
     <!----------------------------------------------- FORMATION  ------------------------------------------>
     <section id="formation" class="d-flex align-items-center">
-        <div class="container vh-100">
+        <div class="container h-100">
             <div class="row h-75">
-                <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800" class="col-7 col-lg-6 text-end d-flex flex-column justify-content-center px-lg-5">
+
+                <!-- Left side -->
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800"
+                    class="col-7 col-lg-6 text-end d-flex flex-column justify-content-center px-lg-5">
                     <h3 class="py-2 text-end">formation</h3>
                     <h5 class="py-2 fs-5">
                         Une reconversion réussi commence par une formation de qualité.
@@ -200,8 +200,9 @@
                         Campus, sur un cursus de 9 mois, de mars à novembre 2021.</h6>
                 </div>
 
-
-                <div data-aos="fade-down" data-aos-duration="1000"  data-aos-delay="800" class="part-right-dc col-5 col-lg-6 align-items-lg-center align-items-start d-flex flex-column flex-lg-row justify-content-center justify-content-lg-around px-lg-5">
+                <!-- Right side -->
+                <div data-aos="fade-down" data-aos-duration="1000" data-aos-delay="800"
+                    class="part-right-dc col-5 col-lg-6 align-items-lg-center align-items-start d-flex flex-column flex-lg-row justify-content-center justify-content-lg-around px-lg-5">
                     <div class="img-dc p-3 bg-secondary rounded mx-lg-2">
                         <img class="img-fluid h-100" src="./img/logo-digital-campus.svg" alt="">
                     </div>
@@ -219,19 +220,95 @@
         </div>
     </section>
 
-    <!-- ---------------------------------------------- SKILLS------------------------------------ -->
-    <!-- <section id="skills" class="" data-aos="zoom-in" data-aos-duration="1900">
-        <div class="container">
-            <div class="row">
-
-                <div class=" col-sm-6 imgskills">
+    <!-- ---------------------------------------------- SKILLS ------------------------------------ -->
+    <section id="skills" class="d-flex align-items-center">
+        <div class="container h-100">
+            <div class="row flex-lg-row-reverse h-75 mx-1">
+                <div data-aos="" data-aos-duration="1000" data-aos-delay="800"
+                    class="col-12 col-lg-6 d-flex flex-column justify-content-center justify-content-lg-start px-lg-5">
+                    <h3 class="py-2">Compétences</h3>
+                    <h5 class="py-2 fs-5">
+                        des compétences prêtes pour vos projets
+                    </h5>
+                    <div class=" my-2 separateur"></div>
+                    <h6 class="py-2">A la suite de ma formation j'ai pu faire le tour des différents langages et
+                        technologies associées suivante. Me permettant aujourd'hui de m'adapter à votre environnement et
+                        à vos méthodes de travail selon les projets</h6>
                 </div>
-                <div class="col-sm-6"> </div>
+                <div
+                    class="container col-12 col-lg-6 rounded justify-content-center align-items-center d-flex flex-column">
+                    <div class="frontend col-12 row flex-lg-colum text-center py-4 py-lg-2">
 
+                        <div class="col-4">
+                            <i class="fab fa-html5 fa-3x"></i>
+                            <p>HTML 5</p>
+                        </div>
+                        <div class="col-4">
+                            <i class="fab fa-css3-alt fa-3x"></i>
+                            <p>CSS 3 / Bootstrap</p>
+                        </div>
+                        <div class="col-4">
+                            <i class="fab fa-js fa-3x"></i>
+                            <p>Java Script / JQuery</p>
+                        </div>
+                    </div>
+                    <div class="backend col-12 row flex-lg-colum text-center py-4 py-lg-2">
 
+                        <div class="col-4">
+                            <i class="fab fa-php fa-3x"></i>
+                            <p>Php / Symphony</p>
+                        </div>
+
+                        <div class="col-4">
+                            <img src="./img/MySQL.svg" class="img img-skills">
+                            <p>MySQL</p>
+                        </div>
+                        <div class="col-4">
+                            <img src="./img/Python-logo-notext.svg" class="img img-skills">
+                            <p>Python / Django</p>
+                        </div>
+                    </div>
+                    <div class="cms col-12 row flex-lg-colum text-center py-4 py-lg-2">
+
+                        <div class="col-6">
+                            <i class="fab fa-wordpress fa-3x"></i>
+                            <p>WordPress</p>
+                        </div>
+                        <div class="col-6">
+                            <img src="./img/Prestashop-logo.png" class="img img-skills">
+                            <p>PrestaShop</p>
+                        </div>
+                    </div>
+                    <div class="git col-12 row flex-lg-colum text-center py-4">
+                        <div class="col-12">
+                            <i class="fab fa-github fa-3x"></i>
+                            <p>GitHub</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Left side
+                <div data-aos="" data-aos-duration="1000"  data-aos-delay="800" class="part-right-dc col-5 col-lg-6 align-items-lg-center align-items-start d-flex flex-column flex-lg-row justify-content-center justify-content-lg-around px-lg-5">
+                    <div class="img-dc p-3 bg-secondary rounded mx-lg-2">
+                        <img class="img-fluid h-100" src="./img/logo-digital-campus.svg" alt="">
+                    </div>
+                    <div class="">
+                        <h5 class="pt-2 mb-1">
+                            Développeur web et web mobile.
+                        </h5>
+                        
+                        <p class="text-justify">Découvrez le programme <a
+                            href="https://www.digital-campus.fr/formation/developpement-web" target="_blank"
+                            rel="noopener noreferrer">ici</a>.</p>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- Right side -->
             </div>
-        </div>
-    </section> -->
+    </section>
+
+
+
 
 
     <!--------------------------------------------------- REALISATION ---------------------------------------------------->

@@ -209,18 +209,6 @@ header {
     color: #1d3557 !important;
 }
 
-.boxImgCv {
-    height: 150px;
-    width: 100%;
-    border-radius: 10px;
-    background-image: url(../img/cv-miniature.jpg);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: .5s ease;
-
-}
-
 .blockquote-footer {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -228,8 +216,26 @@ header {
     color: #6c757d;
 }
 
+.boxImgCv {
+    transition: .5s ease;
+
+}
+
 .cvPart:hover .boxImgCv {
-    opacity: 0.2;
+    height: 100%;
+    opacity: 1;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0.6;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    transition: .5s ease;
 }
 
 .cvPart:hover .middle {
@@ -239,20 +245,10 @@ header {
 .textcv {
     background-color: #a8dadc;
     color: white;
-    font-size: 16px;
-    padding: 16px 32px;
+    font-size: 14px;
+    padding: 12px 32px;
 }
 
-.middle {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    bottom: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-}
 
 /* --------------------------------- FORMATION ---------------------------- */
 
@@ -271,7 +267,6 @@ header {
 }
 
 .img-dc
-
 {
     height: auto;
     width: 100px;
@@ -285,17 +280,38 @@ header {
 
 /* --------------------------------- SKILLS---------------------------- */
 #skills {
-    height: 80vh;
     margin-top: 3rem;
+}
+#skills p {
+    font-size: small;
+}
+#skills .fa:hover {
+    background-color: #1d3557;
+}
+.fa-html5 {
+    color: #DD4B25;
+}
+.fa-css3-alt {
 
+color : #264EDF;
+}
+.fa-js {
+    color: #EFD81D ;
 }
 
-.imgskills {
-    height: 100%;
-    background-image: url(../img/pexels-photo-4073705.jpeg);
-
+.fa-php {
+    color: #777BB3;
+}
+.fa-wordpress {
+    color: #0075A9;
+}
+.fa-github {
+    color: #1f1f1f;
 }
 
+.img-skills {
+    height: 48.8px;
+}
 /* ---------------------------- REALISATIONS ---------------------------- */
 
 #realisation {
