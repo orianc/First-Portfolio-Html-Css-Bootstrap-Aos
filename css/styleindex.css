@@ -1,11 +1,5 @@
 /* ---------------------------------------------------------------- GENERAL RULES --------------------------------------------------------------- */
-*{
-   overflow-x: hidden;
 
-}
-*::-webkit-scrollbar {
-    width: 0!important;
-}
 html {
     scroll-behavior: smooth;
     padding: 0;
