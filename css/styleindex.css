@@ -1,12 +1,16 @@
 /* ---------------------------------------------------------------- GENERAL RULES --------------------------------------------------------------- */
 html {
     scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
 }
 
 body {
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: 300;
     color: #4c5858;
+    padding: 0;
+    margin: 0;
 }
 
 p {
@@ -16,6 +20,7 @@ p {
 
 a {
     color: #a8dadc;
+    text-decoration: none;
 }
 
 .scrollup {
@@ -30,6 +35,68 @@ a {
 
 .bg-secondary {
     background-color: #1d3557 !important;
+}
+
+@media (max-width: 992px) {
+
+    .bg-vertical-line,
+    .bg-x-line-1,
+    .bg-x-line-2,.bg-x-line-3 {
+        width:  0px!important;
+        height: 0px!important;
+        margin: 0px 0px!important;
+        left: 0!important;
+        right: 0!important;
+    }
+
+}
+
+.bg-x-line-1 {
+    width: 50px;
+    height: 1px;
+    background: #1d35573f;
+    z-index: -2;
+    position: absolute;
+    right: 51%;
+    margin-top: 6rem;
+    box-shadow: 0px 0px 20px rgb(0 0 0 / 50%);
+
+
+}
+
+.bg-x-line-2 {
+    width: 50px;
+    height: 1px;
+    background: #1d35573f;
+    z-index: -2;
+    position: absolute;
+    left: 49%;
+    margin-top: 8.5rem;
+    box-shadow: 0px 0px 20px rgb(0 0 0 / 50%);
+
+}
+
+.bg-x-line-3 {
+
+    width: 2%;
+    height: 1px;
+    background: #1d35573f;
+    z-index: -2;
+    position: absolute;
+    margin-top: 0rem;
+    margin: 0 48%;
+
+}
+
+.bg-vertical-line {
+    width: 1px;
+    height: 300%;
+    background: #1d35573f;
+    z-index: -2;
+    position: absolute;
+    left: 49%;
+    box-shadow: 0px 0px 20px rgb(0 0 0 / 50%);
+
 }
 
 /* ------- TEXT COLOR ------- */
@@ -84,7 +151,7 @@ h4 {
 
 h5 {
     font-family: 'Noto Sans JP', sans-serif;
-    
+
     text-transform: capitalize;
     color: black;
     margin-bottom: 1rem;
@@ -166,38 +233,9 @@ header {
 #presentationcarousel {
     min-height: auto;
     padding-top: 5%;
+    background: white;
+    padding-bottom: 30px;
 }
-
-.carousel-indicators li {
-    border: none;
-    background: #ccc;
-}
-
-.carousel-indicators li.active {
-    background: #28a745;
-}
-
-.carousel-control-next-icon,
-.carousel-control-prev-icon {
-    color: #1d3557 !important;
-}
-
-.carousel-control-next {
-
-    justify-content: flex-end;
-
-}
-
-.carousel-control-prev {
-
-    justify-content: flex-start;
-
-}
-
-.carousel-indicators [data-bs-target] {
-    background-color: #1d3557 !important;
-}
-
 
 .pQuote {
     font-size: 13px !important;
@@ -216,61 +254,50 @@ header {
     color: #6c757d;
 }
 
-.boxImgCv {
-    transition: .5s ease;
 
-}
-
-.cvPart:hover .boxImgCv {
-    height: 100%;
-    opacity: 1;
-}
-
-.middle {
-    transition: .5s ease;
-    opacity: 0.6;
-    position: absolute;
-    bottom: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-    transition: .5s ease;
-}
-
-.cvPart:hover .middle {
-    opacity: 1;
-}
 
 .textcv {
-    background-color: #a8dadc;
+    opacity: 0.8;
+    background-color: #1d3557;
     color: white;
     font-size: 14px;
-    padding: 12px 32px;
 }
+
+.textcv:hover {
+    height: 100%;
+    opacity: 1;
+    transition: .5s ease;
+    opacity: 0.6;
+    text-align: center;
+    transition: .5s ease;
+    background: #a8dadc;
+}
+
+
 
 
 /* --------------------------------- FORMATION ---------------------------- */
 
 #formation {
-    min-height: 33vh;
-    max-height: 90vh;
+    min-height: auto;
+    /* max-height: 90vh; */
     margin-top: 2rem;
 }
 
 #formation .row {
     min-height: auto;
 }
+
 #formation .separateur {
     left: 80%;
 
 }
 
-.img-dc
-{
+.img-dc {
     height: auto;
     width: 100px;
 }
+
 .part-right-dc h5 {
     font-size: 16px;
 }
@@ -280,31 +307,39 @@ header {
 
 /* --------------------------------- SKILLS---------------------------- */
 #skills {
-    margin-top: 3rem;
+    min-height: auto;
+    margin-top: 5rem;
 }
+
 #skills p {
     font-size: small;
 }
+
 #skills .fa:hover {
     background-color: #1d3557;
 }
+
 .fa-html5 {
     color: #DD4B25;
 }
+
 .fa-css3-alt {
 
-color : #264EDF;
+    color: #264EDF;
 }
+
 .fa-js {
-    color: #EFD81D ;
+    color: #EFD81D;
 }
 
 .fa-php {
     color: #777BB3;
 }
+
 .fa-wordpress {
     color: #0075A9;
 }
+
 #skills .fa-github {
     color: #1f1f1f;
 }
@@ -312,17 +347,25 @@ color : #264EDF;
 .img-skills {
     height: 48.8px;
 }
+
 /* ---------------------------- REALISATIONS ---------------------------- */
 
 #realisation {
     min-height: auto;
+    padding-top: 30px;
+    background-color: white;
 }
+
 #realisation .card-body {
     position: absolute;
-    top: 2.5%; bottom: 0; right: 0; left: 2.5%;
-    height: 95%; width: 95%;
+    top: 2.5%;
+    bottom: 0;
+    right: 0;
+    left: 2.5%;
+    height: 95%;
+    width: 95%;
     background-color: #1d3557;
-    color: #fcfcfc!important;
+    color: #fcfcfc !important;
     align-items: center;
     display: grid;
     opacity: 0;
@@ -337,17 +380,18 @@ color : #264EDF;
     font-weight: 900;
     letter-spacing: 7px;
 }
- 
+
 .text-muted {
-    color: #fcfcfc!important;
+    color: #fcfcfc !important;
 
 }
+
 .btn-outline-secondary {
-    color: #fcfcfc!important;
+    color: #fcfcfc !important;
 }
 
 .btn-outline-secondary:hover {
-    color: #fff!important;
+    color: #fff !important;
     background-color: #a8dadc;
     border-color: #a8dadc;
 }
