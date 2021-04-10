@@ -90,3 +90,23 @@
                 
                 Contact
         - Ajouter un message windows open, ou prompt, ou pop up bootstrap, pour confirmer l'envoie du mail de contact
+
+1.1.0, 10 avril :
+
+        1.1 = 
+        - Refonte de la section présentation
+        - Amélioration du responsive des sections formations et skills
+        - Ajout d'élément graphique en LG gérée par médiaqueries
+        - Gestion des animations AOS et bugFix
+
+        DONE : 
+        - Voir le responsive et la strucutre en lecture verticale comme la sestion "Formation". Jouer sur les fade-up et down pour un effet fluide. Rester épurer.
+        - Normer autour du projet Namari pour les présentations de paragraphe
+        - Mieux indiquer la présence du CV
+        - Revoir la taille de la "présentation" en mode LG 
+        - "Réalisation" les titres et description à droite, les images à gauche.
+
+        TO DO :
+        - Finir le contenu des réalisations
+        - Prévoir la pop-up 
+        - Prévoir footer / Link Git, Linkedin, droit du site.
