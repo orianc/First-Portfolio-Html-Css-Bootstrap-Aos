@@ -110,3 +110,12 @@
         - Finir le contenu des réalisations
         - Prévoir la pop-up 
         - Prévoir footer / Link Git, Linkedin, droit du site.
+
+1.1.1, 11 avril :
+
+        DONE : 
+        - Finir le contenu des réalisations
+        TO DO :
+        - Prévoir la pop-up 
+        - Prévoir footer / Link Git, Linkedin, droit du site.
+
