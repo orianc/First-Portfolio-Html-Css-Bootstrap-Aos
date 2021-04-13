@@ -191,6 +191,7 @@ h6 {
 /* ----------------------------------- HEADER ----------------------------------- */
 header {
     min-height: 100vh;
+    max-width: 100%;
     padding-top: 20vh;
     box-shadow: inset 0px 0px 15px 0.5px rgba(0, 0, 0, 0.171);
     background-image: radial-gradient(rgba(255, 255, 255, 0.267), rgba(75, 0, 0, 0.137)), linear-gradient(#fffeee5b, #1d3557c9), url(../img/photo-tete.jpg);
