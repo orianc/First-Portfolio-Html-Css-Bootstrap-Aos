@@ -196,7 +196,7 @@ header {
     background-image: radial-gradient(rgba(255, 255, 255, 0.267), rgba(75, 0, 0, 0.137)), linear-gradient(#fffeee5b, #1d3557c9), url(../img/photo-tete.jpg);
     background-position: center;
     background-size: cover!important;
-    background-attachment: fixed;
+    background-attachment: scroll;
 }
 
 /* -------------------------------- NAVBAR  -----------------------------------*/
