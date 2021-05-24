@@ -1,5 +1,80 @@
-# oriancros
+# Projet : Réaliser son portfolio responsive
 
+Pour réaliser se projet, 
+- Je commence par un **benchmark** des portfolios existants de développeur web junior. 
+- Puis je cherche à effectuer ma propre **maquette** graphique pour en dégager une première structure, une organisation qui me permettra de construire le squelette de mon site vitrine. 
+- Par la même occasion j'essaye d'en tirer des **premiers élèments de style**, d'identité visuelle.
+  
+
+# Benchmark
+
+Après avoir fait des recherches, je choisis une liste des portfolios qui m'ont le plus inspirés et je relève des préférences structurelles et des bonnes pratiques :
+
+https://snicolas.fr/
+
+- One-page
+- Le style épuré (code couleur sobre, font sans sérif)
+- Les animations en fade-in
+- Structure A propos, Exp, Skills, Realisations, Contact
+
+https://mattfarley.ca/
+
+- Le style épuré (code couleur sobre, font sans sérif)
+- Skills typé
+
+https://julien-dahy.com/
+
+- Design plus fournis moins épuré
+- Skills typé
+
+https://technext.github.io/namari/index.html
+
+Le tmeplate HTML5 Namari
+
+- Organisation de paragraphe très professionnelle
+- Les paragraphes "font" la structure, le contenu est donc au centre de l'attention
+- Stylé épuré, clair
+
+# Maquettage 
+
+Je choisis d'utiliser [Lucid.app](https://lucid.app/) pour construire une première maquette et une première structure de mes idées. L'app m'a permis d'annoter sur ma maquette des informations qui me seront utile. En voici le résultat :
+
+![](portfolio-maquette.png)
+
+# Problématique
+
+Suite à l'intégration de cette maquette je relève certain point qui ne corresponde pas à mes attentes :
+
+
+## Design :
+- La palette de couleur donne un sentiment de lourdeur et manque de maturité.
+- La section skills risque de ne pas être très clair le choix de présentation n'est pas le bon
+- La section "about me" ne met pas assez bien en avant mes expériences.
+
+## Technique :
+
+- Le manu "nav"
+  - Son design particulier pose très vite des problèmes de responsive
+  - Ses interactions et animations sont techniquement difficile
+
+# Résolution
+
+C'est donc une fois cette première maquette intégrér et une nouvelle étude de mon benchmark que je choisi de :
+##   Design
+- Changer le code couleur pour un effet plus léger et épuré
+- Normer mes sections et mon contenu autour du template "Namari" pour être sûr que le contenu reste visible et lisible
+- Revoir la lisibilité des compétences sous forme de logo pour améliorer la lisibilité
+- Mettre en place une gallerie des réalisations plus "originale", les parties précedentes du portfolio étant revus de façon plus classique pour améliorer la lisibilité, mettre un coup d'originalité sur la gallerie en posera pas problème vus que celle-ci n'est composée que d'image avec descriptif :hover
+
+**Fil conducteur** : une timeline du haut vers le bas pour guider la lisibilité du lecteur (celle ci sera visible en dehors du format mobile qui lui serra rangé par section vh-100 ne posant pas de problème de lisibilité) (display-none en mobile et réorganisation des flex-direction etc... géré par media-queries et par bootstrap)
+
+## Technique
+- Simplifier la barre de nav pour ne pas avoir de problématique de responsive
+- Appel de la bibliothèque AOL pour les effets jQuery de fade-in
+- Utilisation de bootstrap pour l'organisation de la page et le changement de structure en mobile
+
+
+# Chronologie de travail
 
 1.0.0 , 4 avril :
 - Structure  globale OK
